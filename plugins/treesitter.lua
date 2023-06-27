@@ -1,10 +1,23 @@
 return {
   "nvim-treesitter/nvim-treesitter",
-  opts = function(_, opts)
-    -- add more things to the ensure_installed table protecting against community packs modifying it
-    opts.ensure_installed = require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
-      "lua",
-      "php",
-    })
-  end,
+  opts = {
+    ensure_installed = "all",
+    context_commentstring = true,
+    textobjects = {
+      select = {
+        enable = true,
+        lookahead = true,
+        keymaps = {
+          ['if'] = '@function.inner',
+          ['af'] = '@function.outer',
+          ['ia'] = '@parameter.inner',
+          ['aa'] = '@parameter.outer',
+        }
+      }
+    }
+  },
+  dependencies = {
+    'JoosepAlviste/nvim-ts-context-commentstring',
+    'nvim-treesitter/nvim-treesitter-textobjects',
+  }
 }
