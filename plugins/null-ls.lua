@@ -12,16 +12,8 @@ return {
       null_ls.builtins.formatting.phpcsfixer,
       -- js/ts
       null_ls.builtins.formatting.prettier,
-      null_ls.builtins.code_actions.eslint_d.with({
-        condition = function(utils)
-          return utils.root_has_file({ '.eslintrc.json' })
-        end,
-      }),
-      null_ls.builtins.formatting.eslint_d.with({
-        condition = function(utils)
-          return utils.root_has_file({ '.eslintrc.json' })
-        end,
-      }),
+      null_ls.builtins.code_actions.eslint_d,
+      null_ls.builtins.formatting.eslint_d,
     }
     return config -- return final config table
   end,
