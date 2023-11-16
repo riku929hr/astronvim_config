@@ -8,15 +8,7 @@ return {
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
     config.sources = {
-      -- python
-      null_ls.builtins.formatting.autopep8,
-      null_ls.builtins.diagnostics.flake8,
-      -- php
-      null_ls.builtins.formatting.phpcsfixer,
-      -- js/ts
-      null_ls.builtins.formatting.prettier,
-      null_ls.builtins.code_actions.eslint_d,
-      null_ls.builtins.formatting.eslint_d,
+      -- all settings are in mason-null-ls
     }
     return config -- return final config table
   end,

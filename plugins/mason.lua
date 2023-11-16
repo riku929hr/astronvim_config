@@ -17,8 +17,14 @@ return {
   {
     "jay-babu/mason-null-ls.nvim",
     opts = function(_, opts)
-      opts.ensure_installed = nil -- configure in null-ls.lua
-      opts.automatic_installation = true
+      opts.ensure_installed = {
+        -- ts
+        "eslint-lsp",
+        "prettier",
+        -- php
+        "php-cs-fixer",
+      }
+      opts.automatic_installation = false
     end
   },
   {
