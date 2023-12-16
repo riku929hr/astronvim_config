@@ -1,8 +1,12 @@
 {
   "scripts": {
-    "secretlint": "secretlint '**/*'"
+    "secretlint": "secretlint '**/*'",
+    "check-format": "stylua --check **/*.lua",
+    "format": "stylua **/*.lua"
   },
   "devDependencies": {
+    "@johnnymorganz/stylua": "^0.19.1",
+    "@johnnymorganz/stylua-bin": "^0.19.1",
     "secretlint": "^8.0.0"
   }
 }

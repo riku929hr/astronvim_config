@@ -7,5 +7,5 @@ return {
   dependencies = {
     -- 'JoosepAlviste/nvim-ts-context-commentstring', -- this has been already loaded in astronvim/comment.nvim
     -- 'nvim-treesitter/nvim-treesitter-textobjects', -- this has been already loaded in astronvim/comment.nvim
-  }
+  },
 }

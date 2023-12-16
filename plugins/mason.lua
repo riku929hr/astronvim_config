@@ -25,7 +25,7 @@ return {
         "php-cs-fixer",
       }
       opts.automatic_installation = false
-    end
+    end,
   },
   {
     "jay-babu/mason-nvim-dap.nvim",
