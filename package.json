@@ -7,6 +7,10 @@
   "devDependencies": {
     "@johnnymorganz/stylua": "^0.19.1",
     "@johnnymorganz/stylua-bin": "^0.19.1",
-    "secretlint": "^8.0.0"
+    "secretlint": "^8.0.0",
+    "simple-git-hooks": "^2.9.0"
+  },
+  "simple-git-hooks": {
+    "post-commit": "yarn format"
   }
 }
