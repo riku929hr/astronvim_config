@@ -11,20 +11,16 @@ return {
         "tsserver",
         -- lua
         "lua_ls",
+        -- rust
+        "rust_analyzer",
       })
     end,
   },
   {
     "jay-babu/mason-null-ls.nvim",
     opts = function(_, opts)
-      opts.ensure_installed = {
-        -- ts
-        "eslint-lsp",
-        "prettier",
-        -- php
-        "php-cs-fixer",
-      }
-      opts.automatic_installation = false
+      opts.ensure_installed = nil
+      opts.automatic_installation = true
     end,
   },
   {
