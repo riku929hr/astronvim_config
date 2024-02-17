@@ -1,5 +1,13 @@
 return {
   "nvimtools/none-ls.nvim",
+  dependencies = {
+    {
+      "jay-babu/mason-null-ls.nvim",
+      cmd = { "NullLsInstall", "NullLsUninstall" },
+      opts = { handlers = {} },
+    },
+  },
+  event = "User AstroFile",
   opts = function(_, config)
     -- config variable is the default configuration table for the setup function call
     local null_ls = require "null-ls"
