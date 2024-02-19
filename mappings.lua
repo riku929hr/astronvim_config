@@ -22,9 +22,19 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<leader>rr"] = {
+      function() require("telescope").extensions.refactoring.refactors() end,
+      desc = "Refactor",
+    },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+  },
+  x = {
+    ["<leader>rr"] = {
+      function() require("telescope").extensions.refactoring.refactors() end,
+      desc = "Refactor",
+    },
   },
 }
