@@ -17,12 +17,6 @@ return {
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
     config.sources = {
       -- JavaScript, TypeScript
-      null_ls.builtins.diagnostics.eslint.with {
-        condition = function(utils) return utils.root_has_file { ".eslintrc.js", ".eslintrc.json" } end,
-      },
-      null_ls.builtins.formatting.eslint.with {
-        condition = function(utils) return utils.root_has_file { ".eslintrc.js", ".eslintrc.json" } end,
-      },
       null_ls.builtins.formatting.prettier.with {
         condition = function(utils)
           return utils.root_has_file {
