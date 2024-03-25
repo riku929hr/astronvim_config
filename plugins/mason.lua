@@ -9,6 +9,7 @@ return {
         "intelephense",
         -- ts
         "tsserver",
+        "eslint",
         -- lua
         "lua_ls",
         -- rust
